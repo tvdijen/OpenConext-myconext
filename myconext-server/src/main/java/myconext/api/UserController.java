@@ -442,7 +442,7 @@ public class UserController implements UserAuthentication {
     }
 
     @Operation(summary = "Create eduID account",
-            description = "Create an eduID account and sent a verification mail to the user to confirm the ownership of the email. " +
+            description = "Create an eduID account and send a verification mail to the user to confirm the ownership of the email. " +
                     "<br/>Link in the validation email is <a href=\"\">https://login.{environment}.eduid.nl/mobile/api/in-app/create-from-mobile-api?h=={{hash}}</a> which" +
                     "must be captured by the eduID app webview." +
                     "<br/>After the account is finalized server-side the user is logged in and the server redirects to " +
@@ -500,7 +500,7 @@ public class UserController implements UserAuthentication {
     }
 
     @Operation(summary = "Create eduID account with one-time verification code",
-            description = "Create an eduID account and sent a verification mail to the user to confirm the ownership of the email. " +
+            description = "Create an eduID account and send a verification mail to the user to confirm the ownership of the email. " +
                     "<br/>There is a one-time verification code in the email." +
                     "<br/>Together with the hash returned in this endpoint, this code can be verified (and possible resend)",
             responses = {
